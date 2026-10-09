@@ -1,0 +1,85 @@
+{
+  "database": "data/streamlit_data.sqlite",
+  "source_table": "relationship_bars_day",
+  "analysis_table": "qqq_holdings_tlt_relationship_week",
+  "snapshot_table": "qqq_holdings_tlt_relationship_snapshot",
+  "reference_symbol": "TLT",
+  "history_years": 5,
+  "min_history_weeks": 60,
+  "lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "correlation_windows": [
+    13,
+    26,
+    52
+  ],
+  "ibkr": {
+    "host": "127.0.0.1",
+    "port": 7497,
+    "client_id": 42,
+    "use_rth": 1,
+    "what_to_show": "ADJUSTED_LAST",
+    "request_timeout_seconds": 45,
+    "retry_count": 2,
+    "pause_between_requests_seconds": 1.5
+  },
+  "universe": "DOW30",
+  "holdings_cache": "dow30_holdings.csv",
+  "daily_analysis_table": "dow30_tlt_relationship_day",
+  "daily_snapshot_table": "dow30_tlt_relationship_day_snapshot",
+  "weekly_analysis_table": "dow30_tlt_relationship_week",
+  "weekly_snapshot_table": "dow30_tlt_relationship_snapshot",
+  "monthly_analysis_table": "dow30_tlt_relationship_month",
+  "monthly_snapshot_table": "dow30_tlt_relationship_month_snapshot",
+  "min_history_days": 140,
+  "min_history_months": 30,
+  "daily_correlation_windows": [
+    20,
+    60,
+    120
+  ],
+  "weekly_correlation_windows": [
+    13,
+    26,
+    52
+  ],
+  "monthly_correlation_windows": [
+    6,
+    12,
+    24
+  ],
+  "daily_lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "weekly_lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "monthly_lags": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}
